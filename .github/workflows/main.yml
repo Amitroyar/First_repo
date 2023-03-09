@@ -1,0 +1,17 @@
+name: main
+
+on:
+  push: 
+    branches: [ main ]
+  
+jobs:
+   build-staging:
+
+    runs-on:
+      labels: ubuntu-latest
+    steps:
+      - name: "test"
+        run: |
+          echo "hello"
+  
+
